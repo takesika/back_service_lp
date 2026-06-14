@@ -10,12 +10,14 @@
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#111827" />
 
-  <!--
-    Google Analytics / Google Ads 設定欄
-    1. GA4の測定IDを取得したら、下の G-XXXXXXXXXX を置き換える
-    2. Google広告のコンバージョンID/ラベルを取得したら、contact_click の gtag_report_conversion 内を置き換える
-    3. まだ未設定なら、このまま公開してもLP表示は動く
-  -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S9QLLD91KH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S9QLLD91KH');
+  </script>
   <!-- Google tag (gtag.js) - GA4測定IDを入れるまでコメントアウト推奨
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
