@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(ssh-add -l)",
+      "Bash(ssh -o StrictHostKeyChecking=accept-new -o BatchMode=yes -T git@github.com)",
+      "Bash(ssh-keygen -y -P \"\" -f ~/.ssh/id_ed25519)",
+      "Bash(git commit --amend -m ' *)",
+      "Bash(git fetch *)"
+    ]
+  }
+}
