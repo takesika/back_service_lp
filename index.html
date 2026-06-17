@@ -146,7 +146,24 @@
       color: #334155;
       max-width: 740px;
     }
-    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+      padding: 12px 18px;
+      border-radius: 16px;
+      background: #fff5f4;
+      border: 1px solid rgba(217,45,32,.25);
+      color: #1f2937;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+    .hero-badge .free { color: #047857; }
+    .hero-badge .plus { color: var(--muted); font-weight: 700; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -469,8 +486,13 @@
           <p class="lead">
             Back Serviceは、日々の仕事で人が行っている請求・確認・集計・広告作成などの定型業務を、ITとAIで代替するための相談・設計・実装支援サービスです。Webアプリを作るだけでなく、業務のどこにAIを使えるか、何を自動化すべきか、どう運用に落とすかの相談だけでも対応します。
           </p>
+          <div class="hero-badge">
+            <span class="free">初回相談 無料</span>
+            <span class="plus">＋</span>
+            <span>今だけ初月半額 <del>10万円</del> <span class="sale-price">5万円</span></span>
+          </div>
           <div class="cta-row">
-            <a class="btn primary" href="#contact">相談する</a>
+            <a class="btn primary" href="#contact">無料で相談する</a>
             <a class="btn secondary" href="#price">料金を見る</a>
           </div>
           <p class="small">今だけ初月半額キャンペーン中。初月は通常10万円のところ5万円で、相談しながら業務を置き換えるアプリを開発します。2ヶ月目以降は、継続して使うアプリ1本につき月額10万円です。</p>
@@ -714,7 +736,7 @@
               <strong>問い合わせ</strong>
               <p class="small">相談はこちらのフォームからお願いします。</p>
             </div>
-            <a class="btn light" id="contactButton" href="https://forms.gle/E5pXhKQCmc7iHQYg9" target="_blank" rel="noopener">相談フォームへ</a>
+            <a class="btn light" id="contactButton" href="https://forms.gle/E5pXhKQCmc7iHQYg9" target="_blank" rel="noopener">無料で相談する</a>
           </div>
         </div>
       </div>
@@ -724,7 +746,8 @@
   <footer>
     <div class="wrap">
       © Back Service<br />
-      <span class="small">掲載内容は変更される場合があります。</span>
+      <span class="small">掲載内容は変更される場合があります。</span><br />
+      <span class="small"><a href="/privacy.html">プライバシーポリシー・運営者情報</a></span>
     </div>
   </footer>
 
